@@ -3590,6 +3590,9 @@ function library:CreateWindow(name, size, hidebutton)
                 return player
             end
 
+uis.OverrideMouseIconBehavior = Enum.OverrideMouseIconBehavior.None
+uis.MouseIconEnabled = true
+
             function list:RemovePlayer(Player)
                 local p = list.Items:FindFirstChild(Player)
                 if p then
